@@ -162,6 +162,11 @@ h6 {
     margin-top: 0;
 }
 
+.listing {
+    font-size: 1.75em;
+    color: white;
+}
+
 @media(max-width:1199px) {
     ul.banner-social-buttons {
         float: left;

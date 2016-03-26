@@ -1,5 +1,4 @@
-{% load staticfiles %}
-{% load crispy_forms_tags %}
+{% load staticfiles %} {% load crispy_forms_tags %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,14 +10,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Landing Page - Start Bootstrap Theme</title>
+    <title>Above &amp; Beyond</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="../static_in_pro/our_static/css/bootstrap.min.css" rel="stylesheet">
 
 
     <!-- Custom CSS -->
-    <link href="{% static 'css/landing-page.css' %}" rel="stylesheet">
+    <link href="../static_in_pro/our_static/css/landing-page.css" rel="stylesheet">
 
 
     <!-- Custom Fonts -->
@@ -62,7 +61,7 @@
                         <a href="#how-it-works">How It Works</a>
                     </li>
                     <li>
-                    <a class='btn btn-lg btn-warning' href="{% url 'auth_logout' %}">Logout</a>
+                        <a class='btn btn-lg btn-warning' href="{% url 'auth_logout' %}">Logout</a>
                     </li>
                 </ul>
             </div>
@@ -80,17 +79,18 @@
 
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="intro-message">
-                            
-                                {{ instance.OS }}<br/>
-    {{ instance.device }}<br/>
-    {{ instance.need }}<br/>
-    {{ instance.software }}<br/>
-    {{ instance.grade }}<br/>
-    {{ instance.zip_Code }}<br/>
-    {{ instance.time_stamp }}<br/>
-    {{ instance.device }}<br/>
-                                        <a class="btn btn-lg btn-info" href="" role="button"> donate</a>
+                        <div class="listing">
+
+                            {{ instance.OS }}
+                            <br/> {{ instance.device }}
+                            <br/> {{ instance.need }}
+                            <br/> {{ instance.software }}
+                            <br/> {{ instance.grade }}
+                            <br/> {{ instance.zip_Code }}
+                            <br/> {{ instance.time_stamp }}
+                            <br/> {{ instance.device }}
+                            <br/>
+                            <a class="btn btn-lg btn-info" href="" role="button"> donate</a>
 
                         </div>
                     </div>
@@ -104,10 +104,10 @@
 
     <!-- Page Content -->
 
-   
 
 
-    
+
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -130,7 +130,7 @@
                             <a href="#contact">Contact</a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted small">Copyright &copy; Catalyst 2014. All Rights Reserved</p>
+                    <p class="copyright text-muted small">Copyright &copy; Above &amp; Beyond 2016. All Rights Reserved</p>
                 </div>
             </div>
         </div>
