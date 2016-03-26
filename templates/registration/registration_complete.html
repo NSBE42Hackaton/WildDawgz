@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+{%block head_title %}Your Profile{% endblock %}
+
+{%block navbar %} {% endblock %}
+
+{% block more_info%} 
+<br><br>
+<div class="container">
+<div class="col-xs-12 col-md-12 col-lg-12">
+  <h2 class="text-muted"> You have successfully registered.</h2>
+  <h3>In order to better server you we need a little more information.</h3>
+<br>
+
+    <a class="btn btn-lg btn-info" href="{% url 'start' %}" role="button"> Set Up </a>
+
+</div>
+</div>
+{% endblock %}
